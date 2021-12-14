@@ -41,13 +41,18 @@ function setup() {
     World.add(world,bob3);
 
 //write code to make bob4 and bob5
+
+	bob4= Bodies.circle(440,380,20,bob_options);
+    World.add(world,bob4);
 	
-	
+	bob5= Bodies.circle(480,380,20,bob_options);
+    World.add(world,bob5);
 	rope1=new rope(bob1,roof,-80, 0)
 	rope2=new rope(bob2,roof,-40, 0)
 	rope3=new rope(bob3,roof,0, 0)
 //write code to make rope4 and rope5
-	
+rope4=new rope(bob4,roof(40,0)	
+rope5=new rope(bob5,roof(80,0)		       
 	Engine.run(engine);
 	
   
@@ -69,7 +74,8 @@ function draw() {
   ellipse(bob2.position.x,bob2.position.y,40,40);
   ellipse(bob3.position.x,bob3.position.y,40,40);
 //write the code to display bob4 and bob5
- 
+ ellipse(bob4.position.x,bob4.position.y,40,40);
+	ellipse(bob5.position.x,bob5.position.y,40,40);
 }
 
 function keyPressed() {
